@@ -17,7 +17,7 @@
         <div class="nav-links">
           <a href="#objectif">Objectif</a>
           <a href="#pronoms">Pronoms</a>
-          <a href="#exercices">Exercices</a>
+          <a href="#modules">Modules</a>
           <a href="#memo">Mémo</a>
         </div>
       </nav>
@@ -31,7 +31,7 @@
         </p>
         <div class="hero-actions">
           <a class="button primary" href="#pronoms">Commencer</a>
-          <a class="button secondary" href="#exercices">Faire les exercices</a>
+          <a class="button secondary" href="#modules">Faire les modules</a>
         </div>
       </section>
     </header>
@@ -81,26 +81,185 @@
         </div>
       </section>
 
-      <section class="practice" id="exercices">
+      <section class="practice" id="modules">
         <div class="practice-inner">
           <div class="section-heading">
             <p class="eyebrow">Entraînement</p>
-            <h2>Trois mini-défis</h2>
+            <h2>Modules interactifs</h2>
           </div>
-          <ol class="challenge-list">
-            <li>
-              <strong>Remplacer :</strong> Transforme « Marie regarde le film »
-              avec un pronom.
-            </li>
-            <li>
-              <strong>Choisir :</strong> Complète la phrase « Je parle à mon ami,
-              je ___ téléphone ».
-            </li>
-            <li>
-              <strong>Créer :</strong> Écris trois phrases avec un pronom sujet,
-              un pronom objet et un pronom réfléchi.
-            </li>
-          </ol>
+          <p class="practice-lead">
+            Il faut réussir chaque module avec au moins 90% pour débloquer le
+            module suivant. Tu peux recommencer un module autant de fois que tu veux.
+          </p>
+
+          <div class="module-progress" aria-label="Progression des modules">
+            <span data-progress-step="0">1. Sujet</span>
+            <span data-progress-step="1">2. COD</span>
+            <span data-progress-step="2">3. COI</span>
+            <span data-progress-step="3">4. Réfléchis</span>
+          </div>
+
+          <div class="module-stack" id="exercise-app">
+            <article class="module-card" data-module="0">
+              <div class="module-head">
+                <div>
+                  <p class="module-kicker">Module 1</p>
+                  <h3>Pronoms sujets</h3>
+                </div>
+                <span class="score-pill" data-score="0">Pas encore fait</span>
+              </div>
+              <form class="quiz-form" data-quiz="0">
+                <fieldset>
+                  <legend>1. Complète : ___ parle français.</legend>
+                  <label><input type="radio" name="q1" value="elle"> elle</label>
+                  <label><input type="radio" name="q1" value="lui"> lui</label>
+                  <label><input type="radio" name="q1" value="la"> la</label>
+                </fieldset>
+                <fieldset>
+                  <legend>2. Complète : Paul et Léa sont là. ___ écoutent.</legend>
+                  <label><input type="radio" name="q2" value="ils"> ils</label>
+                  <label><input type="radio" name="q2" value="nous"> nous</label>
+                  <label><input type="radio" name="q2" value="leur"> leur</label>
+                </fieldset>
+                <label class="text-question">
+                  3. Remplace « mes amis » par un pronom sujet :
+                  <input type="text" name="q3" autocomplete="off" placeholder="ta réponse">
+                </label>
+                <label class="text-question">
+                  4. Remplace « ma soeur » par un pronom sujet :
+                  <input type="text" name="q4" autocomplete="off" placeholder="ta réponse">
+                </label>
+                <fieldset>
+                  <legend>5. Choisis le pronom sujet pour « toi et moi ».</legend>
+                  <label><input type="radio" name="q5" value="nous"> nous</label>
+                  <label><input type="radio" name="q5" value="vous"> vous</label>
+                  <label><input type="radio" name="q5" value="elles"> elles</label>
+                </fieldset>
+                <button class="check-button" type="submit">Corriger le module</button>
+                <p class="module-feedback" aria-live="polite"></p>
+              </form>
+            </article>
+
+            <article class="module-card locked" data-module="1">
+              <div class="module-head">
+                <div>
+                  <p class="module-kicker">Module 2</p>
+                  <h3>Pronoms COD</h3>
+                </div>
+                <span class="score-pill" data-score="1">Verrouillé</span>
+              </div>
+              <form class="quiz-form" data-quiz="1">
+                <fieldset>
+                  <legend>1. Je regarde le film. Je ___ regarde.</legend>
+                  <label><input type="radio" name="q1" value="le"> le</label>
+                  <label><input type="radio" name="q1" value="lui"> lui</label>
+                  <label><input type="radio" name="q1" value="leur"> leur</label>
+                </fieldset>
+                <fieldset>
+                  <legend>2. Tu vois Marie ? Oui, je ___ vois.</legend>
+                  <label><input type="radio" name="q2" value="la"> la</label>
+                  <label><input type="radio" name="q2" value="lui"> lui</label>
+                  <label><input type="radio" name="q2" value="elle"> elle</label>
+                </fieldset>
+                <label class="text-question">
+                  3. Remplace « les exercices » : Je fais ___.
+                  <input type="text" name="q3" autocomplete="off" placeholder="ta réponse">
+                </label>
+                <label class="text-question">
+                  4. Remplace « moi » dans : Tu invites ___.
+                  <input type="text" name="q4" autocomplete="off" placeholder="ta réponse">
+                </label>
+                <fieldset>
+                  <legend>5. Nous achetons les billets. Nous ___ achetons.</legend>
+                  <label><input type="radio" name="q5" value="les"> les</label>
+                  <label><input type="radio" name="q5" value="leur"> leur</label>
+                  <label><input type="radio" name="q5" value="ils"> ils</label>
+                </fieldset>
+                <button class="check-button" type="submit">Corriger le module</button>
+                <p class="module-feedback" aria-live="polite"></p>
+              </form>
+            </article>
+
+            <article class="module-card locked" data-module="2">
+              <div class="module-head">
+                <div>
+                  <p class="module-kicker">Module 3</p>
+                  <h3>Pronoms COI</h3>
+                </div>
+                <span class="score-pill" data-score="2">Verrouillé</span>
+              </div>
+              <form class="quiz-form" data-quiz="2">
+                <fieldset>
+                  <legend>1. Je parle à mon frère. Je ___ parle.</legend>
+                  <label><input type="radio" name="q1" value="lui"> lui</label>
+                  <label><input type="radio" name="q1" value="le"> le</label>
+                  <label><input type="radio" name="q1" value="il"> il</label>
+                </fieldset>
+                <fieldset>
+                  <legend>2. Elle téléphone à ses parents. Elle ___ téléphone.</legend>
+                  <label><input type="radio" name="q2" value="leur"> leur</label>
+                  <label><input type="radio" name="q2" value="les"> les</label>
+                  <label><input type="radio" name="q2" value="eux"> eux</label>
+                </fieldset>
+                <label class="text-question">
+                  3. Remplace « à moi » : Tu ___ écris.
+                  <input type="text" name="q3" autocomplete="off" placeholder="ta réponse">
+                </label>
+                <label class="text-question">
+                  4. Remplace « à nous » : Le prof ___ explique la règle.
+                  <input type="text" name="q4" autocomplete="off" placeholder="ta réponse">
+                </label>
+                <fieldset>
+                  <legend>5. Vous répondez à la professeure. Vous ___ répondez.</legend>
+                  <label><input type="radio" name="q5" value="lui"> lui</label>
+                  <label><input type="radio" name="q5" value="la"> la</label>
+                  <label><input type="radio" name="q5" value="elle"> elle</label>
+                </fieldset>
+                <button class="check-button" type="submit">Corriger le module</button>
+                <p class="module-feedback" aria-live="polite"></p>
+              </form>
+            </article>
+
+            <article class="module-card locked" data-module="3">
+              <div class="module-head">
+                <div>
+                  <p class="module-kicker">Module 4</p>
+                  <h3>Pronoms réfléchis</h3>
+                </div>
+                <span class="score-pill" data-score="3">Verrouillé</span>
+              </div>
+              <form class="quiz-form" data-quiz="3">
+                <fieldset>
+                  <legend>1. Je ___ lève à sept heures.</legend>
+                  <label><input type="radio" name="q1" value="me"> me</label>
+                  <label><input type="radio" name="q1" value="te"> te</label>
+                  <label><input type="radio" name="q1" value="se"> se</label>
+                </fieldset>
+                <fieldset>
+                  <legend>2. Nous ___ amusons en classe.</legend>
+                  <label><input type="radio" name="q2" value="nous"> nous</label>
+                  <label><input type="radio" name="q2" value="vous"> vous</label>
+                  <label><input type="radio" name="q2" value="se"> se</label>
+                </fieldset>
+                <label class="text-question">
+                  3. Complète : Tu ___ appelles comment ?
+                  <input type="text" name="q3" autocomplete="off" placeholder="ta réponse">
+                </label>
+                <label class="text-question">
+                  4. Complète : Elles ___ préparent pour l'école.
+                  <input type="text" name="q4" autocomplete="off" placeholder="ta réponse">
+                </label>
+                <fieldset>
+                  <legend>5. Il ___ habille rapidement.</legend>
+                  <label><input type="radio" name="q5" value="s'"> s'</label>
+                  <label><input type="radio" name="q5" value="se"> se</label>
+                  <label><input type="radio" name="q5" value="me"> me</label>
+                </fieldset>
+                <button class="check-button" type="submit">Corriger le module</button>
+                <p class="module-feedback" aria-live="polite"></p>
+              </form>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -133,5 +292,6 @@
     <footer class="footer">
       <p>Bonne révision et bon courage pour la suite.</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
