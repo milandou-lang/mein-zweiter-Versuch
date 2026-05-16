@@ -1,96 +1,137 @@
 <!doctype html>
-<html lang="de">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Unterrichts-Landingpage</title>
+    <title>Réviser les pronoms français</title>
     <meta
       name="description"
-      content="Eine einfache Landingpage fuer Unterrichtsmaterialien, Aufgaben und Lernziele."
+      content="Homepage de classe pour répéter les pronoms français avec explications, exemples et exercices."
     >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="hero">
-      <nav class="topbar" aria-label="Hauptnavigation">
-        <a class="brand" href="#start">Unterricht</a>
+    <header class="hero" id="accueil">
+      <nav class="topbar" aria-label="Navigation principale">
+        <a class="brand" href="#accueil">Les pronoms</a>
         <div class="nav-links">
-          <a href="#ziele">Ziele</a>
-          <a href="#auftrag">Auftrag</a>
-          <a href="#material">Material</a>
+          <a href="#objectif">Objectif</a>
+          <a href="#pronoms">Pronoms</a>
+          <a href="#exercices">Exercices</a>
+          <a href="#memo">Mémo</a>
         </div>
       </nav>
 
-      <section id="start" class="hero-content">
-        <p class="eyebrow">Landingpage fuer deine Klasse</p>
-        <h1>Startklar fuer die naechste Unterrichtseinheit</h1>
+      <section class="hero-content">
+        <p class="eyebrow">Français · Répétition</p>
+        <h1>Réviser les pronoms français</h1>
         <p class="intro">
-          Hier finden Lernende den Einstieg, die Ziele, alle Materialien und
-          den konkreten Arbeitsauftrag an einem Ort.
+          Une page claire pour revoir les pronoms personnels, les pronoms objets
+          et les pronoms réfléchis avant l'activité en classe.
         </p>
-        <a class="button" href="#auftrag">Zum Auftrag</a>
+        <div class="hero-actions">
+          <a class="button primary" href="#pronoms">Commencer</a>
+          <a class="button secondary" href="#exercices">Faire les exercices</a>
+        </div>
       </section>
     </header>
 
     <main>
-      <section id="ziele" class="section">
+      <section class="section intro-band" id="objectif">
         <div class="section-heading">
-          <p class="eyebrow">Orientierung</p>
-          <h2>Lernziele</h2>
+          <p class="eyebrow">Aujourd'hui</p>
+          <h2>Objectif de la leçon</h2>
         </div>
-        <div class="grid">
-          <article class="card">
-            <h3>Verstehen</h3>
-            <p>Ich kann die wichtigsten Begriffe des Themas erklaeren.</p>
+        <p class="lead">
+          À la fin de cette répétition, tu peux choisir le bon pronom, remplacer
+          un nom par un pronom et écrire des phrases plus naturelles en français.
+        </p>
+      </section>
+
+      <section class="section" id="pronoms">
+        <div class="section-heading">
+          <p class="eyebrow">Vue d'ensemble</p>
+          <h2>Les familles de pronoms</h2>
+        </div>
+        <div class="pronoun-grid">
+          <article class="pronoun-card">
+            <span class="tag">Sujet</span>
+            <h3>je, tu, il, elle, nous, vous, ils, elles</h3>
+            <p>Ils indiquent qui fait l'action.</p>
+            <div class="example">Elle parle français.</div>
           </article>
-          <article class="card">
-            <h3>Anwenden</h3>
-            <p>Ich kann mein Wissen in einer Aufgabe oder einem Produkt nutzen.</p>
+          <article class="pronoun-card">
+            <span class="tag">COD</span>
+            <h3>me, te, le, la, nous, vous, les</h3>
+            <p>Ils remplacent une personne ou une chose directe.</p>
+            <div class="example">Je la comprends.</div>
           </article>
-          <article class="card">
-            <h3>Reflektieren</h3>
-            <p>Ich kann beschreiben, was gut gelungen ist und wo ich weiterlernen will.</p>
+          <article class="pronoun-card">
+            <span class="tag">COI</span>
+            <h3>me, te, lui, nous, vous, leur</h3>
+            <p>Ils répondent souvent à la question « à qui ? ».</p>
+            <div class="example">Nous lui écrivons.</div>
+          </article>
+          <article class="pronoun-card">
+            <span class="tag">Réfléchi</span>
+            <h3>me, te, se, nous, vous, se</h3>
+            <p>Ils accompagnent les verbes pronominaux.</p>
+            <div class="example">Ils se lèvent tôt.</div>
           </article>
         </div>
       </section>
 
-      <section id="auftrag" class="section section-accent">
-        <div class="section-heading">
-          <p class="eyebrow">Arbeitsphase</p>
-          <h2>Dein Auftrag</h2>
+      <section class="practice" id="exercices">
+        <div class="practice-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Entraînement</p>
+            <h2>Trois mini-défis</h2>
+          </div>
+          <ol class="challenge-list">
+            <li>
+              <strong>Remplacer :</strong> Transforme « Marie regarde le film »
+              avec un pronom.
+            </li>
+            <li>
+              <strong>Choisir :</strong> Complète la phrase « Je parle à mon ami,
+              je ___ téléphone ».
+            </li>
+            <li>
+              <strong>Créer :</strong> Écris trois phrases avec un pronom sujet,
+              un pronom objet et un pronom réfléchi.
+            </li>
+          </ol>
         </div>
-        <ol class="steps">
-          <li>Starte mit dem Einstiegsmaterial und notiere erste Fragen.</li>
-          <li>Bearbeite die Aufgabe allein oder im Team.</li>
-          <li>Sammle deine Ergebnisse in einem Dokument, Plakat oder Padlet.</li>
-          <li>Gib dein Ergebnis ueber den vereinbarten Link ab.</li>
-        </ol>
       </section>
 
-      <section id="material" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Ressourcen</p>
-          <h2>Materialien</h2>
+      <section class="section memo-section" id="memo">
+        <div class="memo-text">
+          <p class="eyebrow">Mémo rapide</p>
+          <h2>La question magique</h2>
+          <p>
+            Pour trouver le bon pronom, cherche d'abord la fonction du mot :
+            qui fait l'action, qui reçoit l'action, ou à qui on parle ?
+          </p>
         </div>
-        <div class="materials">
-          <a href="#" aria-label="Arbeitsblatt Link ergaenzen">
-            <span>Arbeitsblatt</span>
-            <strong>Link ergaenzen</strong>
-          </a>
-          <a href="#" aria-label="Video Link ergaenzen">
-            <span>Video</span>
-            <strong>Link ergaenzen</strong>
-          </a>
-          <a href="#" aria-label="Abgabe Link ergaenzen">
-            <span>Abgabe</span>
-            <strong>Link ergaenzen</strong>
-          </a>
+        <div class="memo-card" aria-label="Résumé des questions utiles">
+          <div>
+            <span>Qui ?</span>
+            <strong>pronom sujet</strong>
+          </div>
+          <div>
+            <span>Qui / quoi ?</span>
+            <strong>COD</strong>
+          </div>
+          <div>
+            <span>À qui ?</span>
+            <strong>COI</strong>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>Erstellt fuer den Unterricht. Passe Texte, Links und Farben frei an.</p>
+      <p>Bonne révision et bon courage pour la suite.</p>
     </footer>
   </body>
 </html>
